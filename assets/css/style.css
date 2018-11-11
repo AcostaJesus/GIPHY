@@ -1,0 +1,77 @@
+body {
+	background-image: url(../images/panda-sushi.jpg);
+	color: #0622fa;
+}
+
+
+html {
+	border: 20px solid;
+	border-image: url("../images/food.jpg") 30 round;
+	min-height: 100%;
+}
+#foodGifs {
+	font-style: italic;
+	font-size: 36px;
+}
+
+.container {
+	opacity: 1;
+	margin-left: 35px;
+}
+
+button {
+    margin: 5px;
+    background-color: #0ef806;
+    color: black;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #f80404;
+    border-radius: 5px;
+}
+
+#food-input-box {
+	float: right;
+	padding-right: 10%;
+}
+
+label {
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+#add-food {
+	padding: 5px 10px 5px 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: #f1f503;
+	color: blak;
+}
+
+#food-input {
+	margin-top: 10px;
+	height: 20px;
+}
+
+#foodDis {
+	margin-top: 10px;
+	margin-right: 25%;
+}
+
+.foodpictures {
+	float: left;
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h2 {
+	margin-top: 5px;
+    margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #a4a4a5;
+}
+
