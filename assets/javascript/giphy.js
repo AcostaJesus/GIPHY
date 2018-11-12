@@ -35,6 +35,7 @@ $(document).ready(function(){
         foodDiv.prepend(p);
 
         foodDiv.prepend(foodImage);
+
         $("#foodDis").prepend(foodDiv);
         });
       }
