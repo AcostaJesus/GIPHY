@@ -12,18 +12,19 @@ $(document).ready(function(){
       method: "GET"
     }).done(function(response){
       $("#foodDis").empty();
-
-      var results = response.data;
       
       console.log(response);
 
-      for(var i = 0; i < results.length; i++) {
+      for(var i = 0; i < response.length; i++) {
+        $(document).ready(function(){
 
+      console.log(response[i]);
+        
         var foodDiv = $("<div>");
 
         foodDiv.addClass("foodpictures");
 
-        var rating = results[i].rating;
+        var rating = response.data[i].rating;
         var p = $("<h2>").text("Rating: " + rating);
 
         var foodImage = $("<img>");
@@ -37,6 +38,7 @@ $(document).ready(function(){
 
         foodDiv.prepend(foodImage);
         $("#foodDis").prepend(foodDiv);
+        });
       }
 
       $(".foodImage").on("click", function() {
@@ -82,7 +84,7 @@ $(document).ready(function(){
     renderButtons();
   });
 
-  $(document).on("click", ".foods", displayFoods);
+  $(document).on("click", ".eatFood", displayFoods);
 
   renderButtons();
 });
