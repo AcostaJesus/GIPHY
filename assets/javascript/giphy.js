@@ -17,20 +17,18 @@ $(document).ready(function(){
 
       for(var i = 0; i < response.length; i++) {
         $(document).ready(function(){
-
-      console.log(response[i]);
         
         var foodDiv = $("<div>");
+        var data = response.data[i];
 
         foodDiv.addClass("foodpictures");
 
-        var rating = response.data[i].rating;
         var p = $("<h2>").text("Rating: " + rating);
 
         var foodImage = $("<img>");
-        foodImage.attr("src", results[i].images.fixed_height_still.url);
-        foodImage.attr("data-still", results[i].images.fixed_height_still.url);
-        foodImage.attr("data-animate", results[i].images.fixed_height.url);
+        foodImage.attr("src", data.images.fixed_height_still.url);
+        foodImage.attr("data-still", data.images.fixed_height_still.url);
+        foodImage.attr("data-animate", data.images.fixed_height.url);
         foodImage.attr("data-state", "still");
         foodImage.addClass('foodImage');
 
